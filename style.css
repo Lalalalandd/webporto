@@ -1,0 +1,806 @@
+		*{
+			font-family: montserrat, sans-serif;
+			margin: 0px;
+			padding: 0px;
+
+		}
+		body{
+			background-color: #161616;
+			position: relative;
+		}
+		input{
+			position: absolute;
+
+		}
+		.navbar{
+			height: 100px;
+			padding: 0 100px;
+			background: #1F1F1F;
+		    color: #fff;
+		}
+		.header{
+		  line-height: 100px;
+		  float: left;
+		  text-transform: uppercase;
+		  font-size: 16px;
+		}
+		.menu{
+			float: right;
+			color: white;
+			line-height: 100px;
+			font-size: 16px;
+		}
+
+		.menu a{
+			  color: #fff;
+			  text-decoration: none;
+			  padding: 0 32px;
+			  transition: 0.4s;
+		}
+
+		.menu a:hover,
+		.show-menu-btn:hover,
+		.hide-menu-btn:hover{
+		  color: orange;
+		}
+
+		.show-menu-btn,.hide-menu-btn{
+		  transition: 0.4s;
+		  font-size: 30px;
+		  cursor: pointer;
+		  display: none;
+		}
+
+		.show-menu-btn{
+			float: right;
+		}
+
+		.show-menu-btn i{
+		    line-height: 100px;
+		}
+
+		#chk{
+			position: absolute;
+			visibility: hidden;
+			z-index: -1111;
+		}
+
+			@media screen and (max-width:800px) {
+			  .show-menu-btn,.hide-menu-btn{
+			    display: block;
+			  }
+			  .menu{
+			    position: fixed;
+			    width: 100%;
+			    height: 100vh;
+			    background: #333;
+			    right: -100%;
+			    top: 0;
+			    text-align: center;
+			    padding: 80px 0;
+			    line-height: normal;
+			    transition: 0.7s;
+			  }
+			  .menu a{
+			    display: block;
+			    padding: 20px;
+			  }
+			  .hide-menu-btn{
+			    position: absolute;
+			    top: 40px;
+			    right: 40px;
+			  }
+			  #chk:checked ~ .menu{
+			    right: 0;
+			  }
+			}
+
+
+		.content{
+			color: white;
+			margin: center;
+		}
+
+		.nama{
+			position: absolute;
+			width: 415px;
+			height: 48px;
+			left: 156px;
+			top: 245px;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 28px;
+			line-height: 48px;
+			/* identical to box height */
+			color: #F55E08;
+		}
+
+		.gelar{
+			position: absolute;
+			width: 648px;
+			height: 110px;
+			left: 156px;
+			top: 309px;
+
+		
+			font-style: normal;
+			font-weight: 600;
+			font-size: 48px;
+			line-height: 115.5%;
+			/* or 55px */
+			color: #FFFFFF;
+
+		}
+		.konten{
+			position: absolute;
+			width: 648px;
+			height: 132px;
+			left: 156px;
+			top: 443px;
+
+			font-style: normal;
+			font-weight: normal;
+			font-size: 16px;
+			line-height: 22px;
+			color: #8E8E8E;
+		}
+		.email1{
+			position: absolute;
+			width: 150px;
+			height: 56px;
+			left: 156px;
+			top: 613px;
+			background: #F55E08;
+			border-radius: 5px;
+			color: white;
+			cursor: pointer;
+			font-size: 16px;
+			border: none;
+		}
+		.downloadcv{
+			position: absolute;
+			width: 116px;
+			height: 24px;
+			left: 173px;
+			top: 685px;
+
+			text-decoration: none;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 24px;
+			color: #8E8E8E;
+		}
+
+		.foto{
+			float: right;
+		}
+		
+		.title1{
+			position: absolute;
+			width: 264px;
+			height: 55px;
+			left: 156px;
+			top: 869.02px;
+
+			font-style: normal;
+			font-weight: 600;
+			font-size: 36px;
+			line-height: 115.5%;
+			/* or 55px */
+			color: #FFFFFF;
+		}
+
+
+			/* Donorin-Card*/
+
+		.card1{
+		 position: absolute;
+		left: 0%;
+		right: 0%;
+		top: 0%;
+		bottom: 0%;
+
+		background: #1F1F1F;
+		border-radius: 20px;
+		width: 1128px;
+		height: 250px;
+		left: 156px;
+		top: 1004.02px;
+		}
+
+		.card1:hover {
+		  box-shadow: 0 0px 16px 0 rgba(245, 94, 8, 1);
+		}
+
+		.fotodonorin{
+		position: absolute;
+		left: 4.17%;
+		right: 64.98%;
+		top: 10.8%;
+		bottom: 10.8%;
+		}
+
+		.isi1{
+		position: absolute;
+		left: 42.55%;
+		right: 27.04%;
+		top: 39.2%;
+		bottom: 39.2%;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 54px;
+		color: #FFFFFF;
+		}
+
+		.view1{
+			position: absolute;
+			left: 84.13%;
+			right: 2.57%;
+			top: 38.8%;
+			bottom: 38.8%;
+			background: #F55E08;
+			border-radius: 5px;
+			color: white;
+			cursor: pointer;
+			font-size: 16px;
+			border: none;
+			transition: 0.4s;
+		}
+		.view1:hover{
+			  background-color: #161616;
+			  color: orange;
+			  border: 2px solid orange;
+		}
+
+			/* Drone-Card*/
+		.card2{
+		position: absolute;
+		left: 0%;
+		right: 0%;
+		top: 0%;
+		bottom: 0%;
+
+		background: #1F1F1F;
+		border-radius: 20px;
+		width: 1128px;
+		height: 250px;
+		left: 156px;
+		top: 1302.02px;
+
+		}
+
+		.card2:hover {
+		  box-shadow: 0 0px 16px 0 rgba(245, 94, 8, 1);
+		}
+
+		.fotodrone{
+		position: absolute;
+		left: 4.17%;
+		right: 64.98%;
+		top: 10.8%;
+		bottom: 10.8%;
+		border-radius: 10px;
+		}
+
+		.isi2{
+		position: absolute;
+		left: 42.55%;
+		right: 27.04%;
+		top: 39.2%;
+		bottom: 39.2%;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 54px;
+		color: #FFFFFF;
+		}
+
+		.view2{
+			position: absolute;
+			left: 84.13%;
+			right: 2.57%;
+			top: 38.8%;
+			bottom: 38.8%;
+			background: #F55E08;
+			border-radius: 5px;
+			color: white;
+			cursor: pointer;
+			font-size: 16px;
+			border: none;
+			transition: 0.4s;
+		}
+		.view2:hover{
+			  background-color: #161616;
+			  color: orange;
+			  border: 2px solid orange;
+		}
+
+			/* APASY-Card*/
+		.card3{
+		position: absolute;
+		left: 0%;
+		right: 0%;
+		top: 0%;
+		bottom: 0%;
+
+		background: #1F1F1F;
+		border-radius: 20px;
+		width: 1128px;
+		height: 250px;
+		left: 156px;
+		top: 1600.02px;
+
+		}
+
+		.card3:hover {
+		  box-shadow: 0 0px 16px 0 rgba(245, 94, 8, 1);
+		}
+
+		.fotoapasy{
+		position: absolute;
+		left: 4.17%;
+		right: 64.98%;
+		top: 10.8%;
+		bottom: 10.8%;
+		border-radius: 10px;
+		}
+
+		.isi3{
+		position: absolute;
+		left: 42.55%;
+		right: 27.04%;
+		top: 39.2%;
+		bottom: 39.2%;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 54px;
+		color: #FFFFFF;
+		}
+
+		.view3{
+			position: absolute;
+			left: 84.13%;
+			right: 2.57%;
+			top: 38.8%;
+			bottom: 38.8%;
+			background: #F55E08;
+			border-radius: 5px;
+			color: white;
+			cursor: pointer;
+			font-size: 16px;
+			border: none;
+			transition: 0.4s;
+		}
+		.view3:hover{
+			  background-color: #161616;
+			  color: orange;
+			  border: 2px solid orange;
+		}
+
+			/* Interested-Card*/
+
+		.card4{
+		position: absolute;
+		left: 0%;
+		right: 0%;
+		top: 0%;
+		bottom: 0%;
+		background: #1F1F1F;
+		border-radius: 20px;
+		width: 1128px;
+		height: 150px;
+		left: 156px;
+		top: 1914.02px;
+
+		}
+
+		.isi4{
+		position: absolute;
+		left: 2.57%;
+		right: 61.35%;
+		top: 34%;
+		bottom: 34%;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 48px;
+		color: #FFFFFF;		
+		}
+
+		.seemore{
+			position: absolute;
+			left: 66.93%;
+			right: 18.53%;
+			top: 31.33%;
+			bottom: 31.33%;
+			background-color: #161616;
+			color: #8E8E8E;
+		    border: 1px solid #F55E08;
+			box-sizing: border-box;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+			transition: 0.4s;
+		}
+
+		.seemore:hover{
+			color: white;
+			background-color: #F55E08;
+		}
+
+		.email2{
+			position: absolute;
+			left: 84.13%;
+			right: 2.57%;
+			top: 31.33%;
+			bottom: 31.33%;
+			background: #F55E08;
+			border-radius: 5px;
+			color: white;
+			cursor: pointer;
+			font-size: 16px;
+			border: none;
+		}
+
+		
+		/* Section Why Hire Me */
+
+		.title2{
+			position: absolute;
+			width: 303px;
+			height: 55px;
+			left: 156px;
+			top: 2224.02px;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 36px;
+			line-height: 115.5%;
+			color: #FFFFFF;
+		}
+
+		/* Card-Comunicative */
+
+		.square1{
+			position: absolute;
+			width: 264px;
+			height: 264px;
+			left: 156px;
+			top: 2359.02px;
+			background: #1F1F1F;
+			border-radius: 20px;
+		}
+
+		.icon1{
+			position: absolute;
+			left: 39.39%;
+			right: 39.39%;
+			top: 29.55%;
+			bottom: 49.24%;
+		}
+
+		.deskripsi1{
+			position: absolute;
+			left: 20.45%;
+			right: 20.83%;
+			top: 59.85%;
+			bottom: 29.55%;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 24px;
+			line-height: 115.5%;
+			color: #C4C4C4;
+		}
+
+		/* Card-Collaborative */
+
+		.square2{
+			position: absolute;
+			width: 264px;
+			height: 264px;
+			left: 444px;
+			top: 2359.02px;
+			background: #1F1F1F;
+			border-radius: 20px;
+		}
+
+		.icon2{
+			position: absolute;
+			left: 36.74%;
+			right: 35.98%;
+			top: 28.03%;
+			bottom: 44.7%;
+		}
+
+		.deskripsi2{
+			position: absolute;
+			left: 20.45%;
+			right: 20.83%;
+			top: 59.85%;
+			bottom: 29.55%;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 24px;
+			line-height: 115.5%;
+			color: #C4C4C4;
+		}
+
+		/* Card-Team Management */	
+
+		.square3{
+			position: absolute;
+			width: 264px;
+			height: 264px;
+			left: 735px;
+			top: 2359.02px;
+			background: #1F1F1F;
+			border-radius: 20px;
+		}
+
+		.icon3{
+			position: absolute;
+			left: 35.23%;
+			right: 37.5%;
+			top: 28.03%;
+			bottom: 44.7%;
+		}
+
+		.deskripsi3{
+			position: absolute;
+			left: 10.61%;
+			right: 10.61%;
+			top: 61.36%;
+			bottom: 28.03%;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 24px;
+			line-height: 115.5%;
+			color: #C4C4C4;
+		}
+
+		/* Card-Ingenious */
+
+		.square4{
+			position: absolute;
+			width: 264px;
+			height: 264px;
+			left: 1020px;
+			top: 2359.02px;
+			background: #1F1F1F;
+			border-radius: 20px;
+		}
+
+		.icon4{
+			position: absolute;
+			left: 39.39%;
+			right: 39.39%;
+			top: 29.55%;
+			bottom: 49.24%;
+		}
+
+		.deskripsi4{
+			position: absolute;
+			left: 30.3%;
+			right: 29.92%;
+			top: 59.85%;
+			bottom: 29.55%;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 24px;
+			line-height: 115.5%;
+			color: #C4C4C4;
+		}
+
+
+		/*Section Testimonials*/
+		.title3{
+			position: absolute;
+			width: 286px;
+			height: 55px;
+			left: 156px;
+			top: 2783.02px;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 36px;
+			line-height: 115.5%;
+			color: #FFFFFF;
+		}
+
+		/*Comment 1*/
+		.testi1{
+			position: absolute;
+			width: 1128px;
+			height: 150px;
+			left: 156px;
+			top: 2918px;
+			background: #1F1F1F;
+			border-radius: 20px;
+		}
+		.fototesti1{
+			left: 4.08%;
+			right: 80.67%;
+			top: 11.33%;
+			bottom: 11.33%;
+		}
+		.nama1{
+			position: absolute;
+			left: 24.29%;
+			right: 60.37%;
+			top: 15.33%;
+			bottom: 66%;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 18px;
+			line-height: 115.5%;
+			color: #FFFFFF;
+		}
+		.komen1{
+			position: absolute;
+			left: 24.29%;
+			right: 12.32%;
+			top: 36.67%;
+			bottom: 15.33%;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 16px;
+			line-height: 24px;
+			color: #8E8E8E;
+		}
+		/*Comment 2*/
+		.testi2{
+			position: absolute;
+			width: 1128px;
+			height: 150px;
+			left: 156px;
+			top: 3100px;
+			background: #1F1F1F;
+			border-radius: 20px;
+		}
+		.fototesti2{
+			left: 4.08%;
+			right: 80.67%;
+			top: 11.33%;
+			bottom: 11.33%;
+		}
+		.nama2{
+			position: absolute;
+			left: 24.29%;
+			right: 60.37%;
+			top: 15.33%;
+			bottom: 66%;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 18px;
+			line-height: 115.5%;
+			color: #FFFFFF;
+		}
+		.komen2{
+			position: absolute;
+			left: 24.29%;
+			right: 12.32%;
+			top: 36.67%;
+			bottom: 15.33%;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 16px;
+			line-height: 24px;
+			color: #8E8E8E;
+		}
+
+		/*Comment 3*/
+
+		.testi3{
+			position: absolute;
+			width: 1128px;
+			height: 150px;
+			left: 156px;
+			top: 3282px;
+			background: #1F1F1F;
+			border-radius: 20px;
+		}
+		.fototesti3{
+			left: 4.08%;
+			right: 80.67%;
+			top: 11.33%;
+			bottom: 11.33%;
+		}
+		.nama3{
+			position: absolute;
+			left: 24.29%;
+			right: 60.37%;
+			top: 15.33%;
+			bottom: 66%;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 18px;
+			line-height: 115.5%;
+			color: #FFFFFF;
+		}
+		.komen3{
+			position: absolute;
+			left: 24.29%;
+			right: 12.32%;
+			top: 36.67%;
+			bottom: 15.33%;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 16px;
+			line-height: 24px;
+			color: #8E8E8E;
+		}
+
+		/*Section Tools & Skills*/
+		.title4{
+			position: absolute;
+			width: 300px;
+			height: 55px;
+			left: 156px;
+			top: 3592px;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 36px;
+			line-height: 115.5%;
+			color: #FFFFFF;
+		}
+		.fototoolsskills{
+			position: absolute;
+			width: 1128px;
+			height: 100px;
+			left: 156px;
+			top: 3727px;
+		}
+
+
+
+
+
+
+		/*  Footer  */
+		.kaki{
+			position: absolute;
+			width: 1345px;
+			height: 350px;
+			left: 0px;
+			top: 3947px;
+
+			background: #1F1F1F;
+		}
+		.titlekaki{
+			position: absolute;
+			left: 10.83%;
+			right: 74.72%;
+			top: 26.29%;
+			bottom: 61.71%;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 32px;
+			line-height: 115.5%;
+
+
+			color: #FFFFFF;
+		}
+		.titleisi{
+			position: absolute;
+			left: 10.83%;
+			right: 38.19%;
+			top: 42.86%;
+			bottom: 49.14%;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 22px;
+			line-height: 115.5%;
+
+			color: #C4C4C4;
+
+		}
+		.sosmed{
+			position: absolute;
+			left: 10.83%;
+			right: 80.28%;
+			top: 64.57%;
+			bottom: 26.29%;
+		}
+
+
